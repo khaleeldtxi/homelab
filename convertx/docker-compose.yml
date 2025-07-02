@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - C:\Users\Khaleel\Documents\Docker Containers\convertx:/app/data
+      - C:\Users\Khaleel\Documents\Docker_Containers\convertx:/app/data
       # Change volume path
     environment:
       # Remove the following line if you want to enable signing in
