@@ -1,0 +1,16 @@
+services:
+  convertx:
+    image: ghcr.io/c4illin/convertx:latest
+    container_name: convertx
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - C:\Users\Khaleel\Documents\Docker Containers\convertx:/app/data
+      # Change volume path
+    environment:
+      # Remove the following line if you want to enable signing in
+      ALLOW_UNAUTHENTICATED: true
+      JWT_SECRET: aLongAndSecretStringUsedToSignTheJSONWebToken1234
+      # Uncomment the following line if you want to enalbe user sign up
+      # ACCOUNT_REGISTRATION: true
